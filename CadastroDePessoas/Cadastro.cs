@@ -12,16 +12,17 @@ namespace CadastroDePessoas
         Conexao conexao = new Conexao();
         SqlCommand cmd = new SqlCommand();
         public String mensagem = "";
-        public Cadastro(String Nome, String Conta, String Agencia)
+        public Cadastro(String Nome, String Conta, String Agencia, String Email, String Senha)
         {
             //1 - Comando sql --SqlComand
-            cmd.CommandText = "insert into Users (nome, conta, agencia) values (@Nome, @Conta, @Agencia)";
+            cmd.CommandText = "insert into Users (nome, conta, agencia, email, senha) values (@Nome, @Conta, @Agencia, @Email, @Senha)";
 
             //Parametros
             cmd.Parameters.AddWithValue("@nome", Nome);
             cmd.Parameters.AddWithValue("@conta", Conta);
             cmd.Parameters.AddWithValue("@agencia", Agencia);
-
+            cmd.Parameters.AddWithValue("@email", Email);
+            cmd.Parameters.AddWithValue("@senha", Senha);
 
             try
             {
