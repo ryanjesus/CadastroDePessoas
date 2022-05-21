@@ -40,7 +40,7 @@ namespace CadastroDePessoas
             }
             catch (SqlException e)
             {
-                this.mensagem = "Erro ao se conectar com o banco de dados";
+                this.mensagem = "Ocorreu o erro:" + e;
             }
 
             
