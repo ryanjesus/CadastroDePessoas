@@ -17,9 +17,10 @@ namespace CadastroDePessoas
         public Conexao()
         {
             connection.ConnectionString = (@"Data Source=DESKTOP-E267L7P\SQLEXPRESS;Initial Catalog=Contas;Integrated Security=True");
+            
         }
-        //Metodo Conectar
 
+        //Metodo Conectar
         public SqlConnection conectar()
         {
             if (connection.State == System.Data.ConnectionState.Closed)
