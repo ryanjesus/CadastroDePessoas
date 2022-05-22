@@ -1,3 +1,5 @@
+using CadastroDePessoas.Apresentação;
+
 namespace CadastroDePessoas
 {
     internal static class Program
@@ -11,7 +13,8 @@ namespace CadastroDePessoas
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Form1());
+            Application.Run(new login());
+           // Application.Run(new Form1());
         }
     }
 }

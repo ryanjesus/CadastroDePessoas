@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CadastroDePessoas;
+using CadastroDePessoas.Modelo;
 
 namespace CadastroDePessoas.Apresentação
 {
@@ -29,8 +31,35 @@ namespace CadastroDePessoas.Apresentação
 
         private void btcadastreSe_Click(object sender, EventArgs e)
         {
-            login cad = new login();
+            Form1 cad = new Form1();
             cad.Show();
         }
+
+        private void tbSair_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btEntrar_Click(object sender, EventArgs e)
+        {
+            Controle controle = new Controle();
+            controle.acessar(txbLogin.Text, txbSenha.Text);
+        if (controle.mensagem.Equals(""))
+        {
+                if (controle.tem)
+                {
+                    MessageBox.Show("Logado com sucesso", "Entrando", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    Menu mn = new Menu();
+                    mn.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Login não encontrado, verifique login e senha", "ERRO!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+               }else
+                {
+                MessageBox.Show(controle.mensagem);
+                }
+            }
+        }
     }
-}

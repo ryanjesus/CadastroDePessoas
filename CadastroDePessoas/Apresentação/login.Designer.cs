@@ -48,6 +48,7 @@
             this.tbSair.TabIndex = 0;
             this.tbSair.Text = "Sair";
             this.tbSair.UseVisualStyleBackColor = false;
+            this.tbSair.Click += new System.EventHandler(this.tbSair_Click);
             // 
             // btEntrar
             // 
@@ -57,6 +58,7 @@
             this.btEntrar.TabIndex = 1;
             this.btEntrar.Text = "Entrar";
             this.btEntrar.UseVisualStyleBackColor = false;
+            this.btEntrar.Click += new System.EventHandler(this.btEntrar_Click);
             // 
             // lbSenha
             // 
