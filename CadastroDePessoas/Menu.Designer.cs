@@ -30,12 +30,13 @@
         {
             this.btSacar = new System.Windows.Forms.Button();
             this.btDepositar = new System.Windows.Forms.Button();
-            this.lbUsuario = new System.Windows.Forms.Label();
             this.lbAgencia = new System.Windows.Forms.Label();
             this.lbConta = new System.Windows.Forms.Label();
             this.lbSaldo = new System.Windows.Forms.Label();
             this.blValor = new System.Windows.Forms.Label();
             this.txbValor = new System.Windows.Forms.TextBox();
+            this.txbConta = new System.Windows.Forms.TextBox();
+            this.txbAgencia = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btSacar
@@ -55,15 +56,7 @@
             this.btDepositar.TabIndex = 1;
             this.btDepositar.Text = "Depositar";
             this.btDepositar.UseVisualStyleBackColor = true;
-            // 
-            // lbUsuario
-            // 
-            this.lbUsuario.AutoSize = true;
-            this.lbUsuario.Location = new System.Drawing.Point(58, 57);
-            this.lbUsuario.Name = "lbUsuario";
-            this.lbUsuario.Size = new System.Drawing.Size(50, 15);
-            this.lbUsuario.TabIndex = 2;
-            this.lbUsuario.Text = "Usuario:";
+            this.btDepositar.Click += new System.EventHandler(this.btDepositar_Click);
             // 
             // lbAgencia
             // 
@@ -104,22 +97,37 @@
             // 
             // txbValor
             // 
-            this.txbValor.Location = new System.Drawing.Point(100, 179);
+            this.txbValor.Location = new System.Drawing.Point(106, 174);
             this.txbValor.Name = "txbValor";
             this.txbValor.Size = new System.Drawing.Size(100, 23);
             this.txbValor.TabIndex = 7;
+            // 
+            // txbConta
+            // 
+            this.txbConta.Location = new System.Drawing.Point(106, 84);
+            this.txbConta.Name = "txbConta";
+            this.txbConta.Size = new System.Drawing.Size(100, 23);
+            this.txbConta.TabIndex = 8;
+            // 
+            // txbAgencia
+            // 
+            this.txbAgencia.Location = new System.Drawing.Point(300, 84);
+            this.txbAgencia.Name = "txbAgencia";
+            this.txbAgencia.Size = new System.Drawing.Size(100, 23);
+            this.txbAgencia.TabIndex = 9;
             // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(538, 311);
+            this.Controls.Add(this.txbAgencia);
+            this.Controls.Add(this.txbConta);
             this.Controls.Add(this.txbValor);
             this.Controls.Add(this.blValor);
             this.Controls.Add(this.lbSaldo);
             this.Controls.Add(this.lbConta);
             this.Controls.Add(this.lbAgencia);
-            this.Controls.Add(this.lbUsuario);
             this.Controls.Add(this.btDepositar);
             this.Controls.Add(this.btSacar);
             this.Name = "Menu";
@@ -133,11 +141,12 @@
 
         private Button btSacar;
         private Button btDepositar;
-        private Label lbUsuario;
         private Label lbAgencia;
         private Label lbConta;
         private Label lbSaldo;
         private Label blValor;
         private TextBox txbValor;
+        private TextBox txbConta;
+        private TextBox txbAgencia;
     }
 }

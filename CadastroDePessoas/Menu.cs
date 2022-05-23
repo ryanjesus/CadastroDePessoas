@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CadastroDePessoas.Modelo;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,6 +21,12 @@ namespace CadastroDePessoas
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btDepositar_Click(object sender, EventArgs e)
+        {
+            ControleConta cc = new ControleConta(txbValor.Text, txbAgencia.Text, txbConta.Text);
+            MessageBox.Show(cc.mensagem);
         }
     }
 }
