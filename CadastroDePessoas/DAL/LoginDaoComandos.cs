@@ -37,10 +37,5 @@ namespace CadastroDePessoas.Modelo
             return tem;
         }
 
-        public String cadastrar(String email, String senha, String ConfSenha)
-        {
-            //Comandos para inserir no banco
-            return mensagem;
-        }
     }
 }

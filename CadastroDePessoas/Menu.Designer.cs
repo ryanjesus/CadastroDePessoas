@@ -47,6 +47,7 @@
             this.btSacar.TabIndex = 0;
             this.btSacar.Text = "Sacar";
             this.btSacar.UseVisualStyleBackColor = true;
+            this.btSacar.Click += new System.EventHandler(this.btSacar_Click);
             // 
             // btDepositar
             // 

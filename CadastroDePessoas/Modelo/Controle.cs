@@ -25,7 +25,7 @@ namespace CadastroDePessoas.Modelo
         }
         //cadastrar
 
-        public String cadastrar(String email, String senha, String ConfSenha)
+        public String cadastrar(String email, String senha)
         {
             return mensagem;
         }

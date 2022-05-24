@@ -1,4 +1,5 @@
-﻿using CadastroDePessoas.Modelo;
+﻿using CadastroDePessoas.DAL;
+using CadastroDePessoas.Modelo;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -8,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 
 namespace CadastroDePessoas
 {
@@ -26,6 +28,12 @@ namespace CadastroDePessoas
         private void btDepositar_Click(object sender, EventArgs e)
         {
             ControleConta cc = new ControleConta(txbValor.Text, txbAgencia.Text, txbConta.Text);
+            MessageBox.Show(cc.mensagem);
+        }
+
+        private void btSacar_Click(object sender, EventArgs e)
+        {
+            Sacar cc = new Sacar(txbValor.Text, txbAgencia.Text, txbConta.Text);
             MessageBox.Show(cc.mensagem);
         }
     }

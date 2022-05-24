@@ -12,6 +12,7 @@ namespace CadastroDePessoas
         Conexao conexao = new Conexao();
         SqlCommand cmd = new SqlCommand();
         public String mensagem = "";
+        //public bool tem = false;
         public Cadastro(String Nome, String Conta, String Agencia, String Email, String Senha)
         {
             //1 - Comando sql --SqlComand
@@ -37,7 +38,6 @@ namespace CadastroDePessoas
 
                 //Mostrar mensagem de erro ou sucesso --Variavel
                 this.mensagem = "Cadastrado com Sucesso!";
-
             }
             catch (SqlException e)
             {
