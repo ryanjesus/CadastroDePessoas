@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CadastroDePessoas.Modelo;
 
 
 namespace CadastroDePessoas
@@ -35,6 +36,16 @@ namespace CadastroDePessoas
         {
             Sacar cc = new Sacar(txbValor.Text, txbAgencia.Text, txbConta.Text);
             MessageBox.Show(cc.mensagem);
+        }
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cadastroBindingSource_CurrentChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

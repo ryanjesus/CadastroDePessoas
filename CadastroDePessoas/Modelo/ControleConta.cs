@@ -22,7 +22,6 @@ namespace CadastroDePessoas.Modelo
             cmd.Parameters.AddWithValue("@v_conta", v_conta);
             cmd.Parameters.AddWithValue("@agencia", agencia);
             cmd.Parameters.AddWithValue("@conta", conta);
-
             try
             {
                 //Conectar com banco --Conexao
@@ -39,7 +38,7 @@ namespace CadastroDePessoas.Modelo
             }
             catch (SqlException e)
             {
-                this.mensagem = "Ocorreu o erro:" + e;
+                this.mensagem = "Apenas numeros";
             }
         }
     }

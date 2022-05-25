@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btSacar = new System.Windows.Forms.Button();
             this.btDepositar = new System.Windows.Forms.Button();
             this.lbAgencia = new System.Windows.Forms.Label();
@@ -37,6 +38,8 @@
             this.txbValor = new System.Windows.Forms.TextBox();
             this.txbConta = new System.Windows.Forms.TextBox();
             this.txbAgencia = new System.Windows.Forms.TextBox();
+            this.cadastroBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.cadastroBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // btSacar
@@ -117,6 +120,11 @@
             this.txbAgencia.Size = new System.Drawing.Size(100, 23);
             this.txbAgencia.TabIndex = 9;
             // 
+            // cadastroBindingSource
+            // 
+            this.cadastroBindingSource.DataSource = typeof(CadastroDePessoas.Cadastro);
+            this.cadastroBindingSource.CurrentChanged += new System.EventHandler(this.cadastroBindingSource_CurrentChanged);
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -133,6 +141,7 @@
             this.Controls.Add(this.btSacar);
             this.Name = "Menu";
             this.Text = "Menu";
+            ((System.ComponentModel.ISupportInitialize)(this.cadastroBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -149,5 +158,6 @@
         private TextBox txbValor;
         private TextBox txbConta;
         private TextBox txbAgencia;
+        private BindingSource cadastroBindingSource;
     }
 }

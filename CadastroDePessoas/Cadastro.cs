@@ -16,7 +16,7 @@ namespace CadastroDePessoas
         public Cadastro(String Nome, String Conta, String Agencia, String Email, String Senha)
         {
             //1 - Comando sql --SqlComand
-            cmd.CommandText = "insert into Users (nome, conta, agencia, email, senha) values (@Nome, @Conta, @Agencia, @Email, @Senha)";
+            cmd.CommandText = "insert into Users (nome, conta, agencia, email, senha, v_conta) values (@Nome, @Conta, @Agencia, @Email, @Senha, '0,00')";
 
             //Parametros
             cmd.Parameters.AddWithValue("@nome", Nome);

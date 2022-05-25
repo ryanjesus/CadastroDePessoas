@@ -39,7 +39,7 @@ namespace CadastroDePessoas.DAL
             }
             catch (SqlException e)
             {
-                this.mensagem = "Ocorreu o erro:" + e;
+                this.mensagem = "Apenas numeros";
             }
         }
     }
