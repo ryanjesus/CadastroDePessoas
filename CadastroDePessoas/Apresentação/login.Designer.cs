@@ -42,6 +42,8 @@
             // 
             // tbSair
             // 
+            this.tbSair.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.tbSair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.tbSair.Location = new System.Drawing.Point(376, 193);
             this.tbSair.Name = "tbSair";
             this.tbSair.Size = new System.Drawing.Size(77, 23);
@@ -52,6 +54,8 @@
             // 
             // btEntrar
             // 
+            this.btEntrar.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.btEntrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btEntrar.Location = new System.Drawing.Point(290, 193);
             this.btEntrar.Name = "btEntrar";
             this.btEntrar.Size = new System.Drawing.Size(75, 23);
@@ -63,25 +67,27 @@
             // lbSenha
             // 
             this.lbSenha.AutoSize = true;
+            this.lbSenha.Font = new System.Drawing.Font("Gadugi", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.lbSenha.Location = new System.Drawing.Point(223, 135);
             this.lbSenha.Name = "lbSenha";
-            this.lbSenha.Size = new System.Drawing.Size(42, 15);
+            this.lbSenha.Size = new System.Drawing.Size(55, 19);
             this.lbSenha.TabIndex = 2;
             this.lbSenha.Text = "Senha:";
             // 
             // lbLogin
             // 
             this.lbLogin.AutoSize = true;
+            this.lbLogin.Font = new System.Drawing.Font("Gadugi", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.lbLogin.Location = new System.Drawing.Point(223, 100);
             this.lbLogin.Name = "lbLogin";
-            this.lbLogin.Size = new System.Drawing.Size(40, 15);
+            this.lbLogin.Size = new System.Drawing.Size(51, 19);
             this.lbLogin.TabIndex = 3;
             this.lbLogin.Text = "Login:";
             this.lbLogin.Click += new System.EventHandler(this.label2_Click);
             // 
             // txbLogin
             // 
-            this.txbLogin.BackColor = System.Drawing.SystemColors.Info;
+            this.txbLogin.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txbLogin.Location = new System.Drawing.Point(290, 97);
             this.txbLogin.Name = "txbLogin";
             this.txbLogin.Size = new System.Drawing.Size(163, 23);
@@ -89,7 +95,7 @@
             // 
             // txbSenha
             // 
-            this.txbSenha.BackColor = System.Drawing.SystemColors.Info;
+            this.txbSenha.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txbSenha.Location = new System.Drawing.Point(290, 132);
             this.txbSenha.Name = "txbSenha";
             this.txbSenha.PasswordChar = '*';
@@ -99,9 +105,10 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.pictureBox1.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(24, 61);
+            this.pictureBox1.Location = new System.Drawing.Point(29, 61);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(177, 155);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -110,6 +117,8 @@
             // 
             // btcadastreSe
             // 
+            this.btcadastreSe.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.btcadastreSe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btcadastreSe.Location = new System.Drawing.Point(339, 290);
             this.btcadastreSe.Name = "btcadastreSe";
             this.btcadastreSe.Size = new System.Drawing.Size(114, 34);
@@ -122,7 +131,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.BackColor = System.Drawing.Color.LightSeaGreen;
             this.ClientSize = new System.Drawing.Size(533, 350);
             this.Controls.Add(this.btcadastreSe);
             this.Controls.Add(this.pictureBox1);

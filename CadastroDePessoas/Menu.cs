@@ -47,5 +47,10 @@ namespace CadastroDePessoas
         {
 
         }
+
+        private void Menu_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
