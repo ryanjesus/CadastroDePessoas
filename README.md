@@ -14,6 +14,3 @@ Sobre o banco de dados utilizado foi o Microsoft Sql server management studio, c
 <div align = "center"> 
  <img src ="https://user-images.githubusercontent.com/73857448/170594359-336266e4-49c5-4867-a946-1660dc84cc7d.png" width = "500px"/>
  </div>
- 
- Atenciosamente,
- Ryan Oliveira
